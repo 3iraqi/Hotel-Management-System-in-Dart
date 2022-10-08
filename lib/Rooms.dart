@@ -1,12 +1,18 @@
-
+// import 'Hotel.dart';
 class Rooms{
+  bool? isBooked;
+  int? roomId;
+  String? roomType;
 
-  int roomId=00;
-  int hotelId=00;
-  String roomType="g";
-  bool? roomStatus;
+  Rooms({
+    this.isBooked,
+    this.roomId,
+    this.roomType,
+});
+
+
    info(){
-    print('Room: $roomId \tHotel: $hotelId \ttype:$roomType');
+    print('Room: $roomId \tHotel: \ttype:$roomType');
   }
 
   void bookRoom(){
@@ -15,25 +21,3 @@ class Rooms{
 
 }//------------------------------------------/ Rooms
 
-class SingleRoom extends Rooms{
-@override
-void bookRoom(){
-  print('Single Room Has Been Booked');
-}///BookSingleRoom
-
-}//--------------------------------------/ Single Room
-
-class DoubleRoom extends Rooms{
-  @override
-  void bookRoom(){
-    print('Double  Room Has Been Booked');
-  }///BookDoubleRoom
-}//----------------------------------------/ Double Room
-
-class NotAvailable extends Rooms{
-  @override
-  void bookRoom(){
-    print(' Room is Not Available');
-  }///UnavailableRoom
-
-}//------------------------------------------------------/ Not Available
