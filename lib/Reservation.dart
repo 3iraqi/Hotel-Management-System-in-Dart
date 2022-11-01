@@ -1,8 +1,9 @@
 
-class Duration {
-
-  DateTime? from;
-  DateTime? to;
-
+class Reservation {
+int ? id;
+int ? roomId;
+String ? amount;
+String ? date;
+String ? reciept;
 
 }/// Duration

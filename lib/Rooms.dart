@@ -1,13 +1,13 @@
 // import 'Hotel.dart';
 class Rooms{
-  bool? isBooked;
   int? roomId;
   String? roomType;
+  bool? isBooked;
 
   Rooms({
-    this.isBooked,
     this.roomId,
     this.roomType,
+    this.isBooked,
 });
 
 

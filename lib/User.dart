@@ -1,24 +1,48 @@
 
-class User{
-  String name="";
-  DateTime? dateOfBirth=DateTime.utc(2001,6,1 );
-  int userId=0;
-  String mobileNum="⭐";
-  bool healthCheck=true;
-  String gender="male";
+class UserData{
+  String ? name;
+  DateTime? dateOfBirth;
+  int ? userId;
+  String ? mobileNum; //="⭐";
+  bool ? healthCheck;
+  String ? gender;
+
+  UserData({
+    this.name,
+    this.dateOfBirth,
+    this.userId,
+    this.mobileNum,
+    this.healthCheck,
+    this.gender
+
+  });
 
   }
 
-  class Client extends User{
+  class Client extends UserData{
 
 
 
   }
 
-  class Manger extends User{
+  class Manger extends UserData{
+Manger({
+  super.name,
+  super.dateOfBirth,
+  super.userId,
+  super.mobileNum,
+  super.healthCheck,
+  super.gender
+
+});
+
 
   }
 
-  class Employee extends User{
+
+
+
+
+  class StaffMember extends UserData{
 
   }
